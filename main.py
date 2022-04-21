@@ -6,7 +6,7 @@ from roboflow import Roboflow
 
 ## INITIALIZATION
 # connect to roboflow with an api key
-rf = Roboflow(api_key="")
+rf = Roboflow(api_key="XMgS6AHEqgIzZsdSSCVx")
 
 # reference the project on universe which contains our inference model
 project = rf.workspace("team-roboflow").project("rock-paper-scissors-detection")
@@ -15,7 +15,7 @@ project = rf.workspace("team-roboflow").project("rock-paper-scissors-detection")
 model = project.version(34).model
 
 # reference upload project destination
-rf2 = Roboflow(api_key="BLlkFnwfSaRFUXBfU0tJ")
+rf2 = Roboflow(api_key="YOUR_API_KEY")
 upload_project = rf2.workspace().project("live-rock-paper-scissors")
 
 print("Reference inference point: ", project)
